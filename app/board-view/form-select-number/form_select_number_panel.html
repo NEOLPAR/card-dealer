@@ -1,0 +1,21 @@
+<form name="selectCardsForm" novalidate ng-submit="placeCards(amount)">
+    <input type="number" name="amount" min="1" max="52" placeholder="Amount" required ng-model="amount"/>
+
+    <button type="submit" ng-disabled="selectCardsForm.$invalid">
+        Cards!
+    </button>
+    <button ng-click="suffles()">
+        Suffle!
+    </button>
+
+    <div class="formError" ng-if="selectCardsForm.amount.$error.max">
+        <span class="formErrorPanel">
+            The value must be a number!
+        </span>
+    </div>
+    <div class="formError" ng-if="selectCardsForm.amount.$error.min">
+        <span class="formErrorPanel">
+            The value must be positive and different of 0!
+        </span>
+    </div>
+</form>

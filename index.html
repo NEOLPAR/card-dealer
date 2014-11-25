@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="CardDealerApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Dealer</title>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+</head>
+<body>
+    <section ng-view></section>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script>window.angular || document.write('<script src="./libs/angular.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+    <script>angular.module("ngRoute") || document.write('<script src="./libs/angular-route.min.js"><\/script>')</script>
+
+    <script src="./app/app.js"></script>
+    <script src="app/shared_components/shared_filters.js"></script>
+
+    <script src="./app/board-view/board-controller.js"></script>
+    <script src="./app/board-view/card-class.js"></script>
+    <script src="./app/board-view/deck-services.js"></script>
+
+    <script src="./app/board-view/cards-directive/cards_directive.js"></script>
+    <script src="./app/board-view/form-select-number/form_select_number_directive.js"></script>
+</body>
+</html>

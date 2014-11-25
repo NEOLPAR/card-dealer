@@ -1,0 +1,30 @@
+@import 'nib'
+@import 'normalize.css'
+
+ul
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 1300px;
+  background-color: grey;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  height: 227px;
+  li
+    position: relative;
+    width: 150px;
+    height: 225px;
+    border: 1px solid;
+    float: left;
+    background-color #ffffff
+    border-radius 20px
+    span
+      display block
+      line-height 4
+    &:not(:first-child)
+      margin-left -132px
+form
+  input
+    width 200px
